@@ -19,6 +19,17 @@ Gardnercraft is a Fabric server-side mod that adds Gardnercraft-themed items and
 
 Vanilla clients can join, but they must accept the server resource pack to see the custom textures.
 
+## Recommendations
+
+- [Gardnercraft Advancements Pack](https://github.com/ILLEGALKONG/gardnercraft_advancements)
+
+## Roadmap
+
+- Update Gardnercraft Smithing Template Item Texture
+- Add a Music Disc with a Custom Song
+- Modrinth and Curseforge Page
+- More Version Compatibility
+
 ## Building
 
 Run:
