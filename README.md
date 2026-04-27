@@ -94,6 +94,4 @@ Do not commit generated folders or files such as:
 
 ## License
 
-This project is currently marked as `All Rights Reserved` in `fabric.mod.json`.
-
-If this repository is made public and you want other people to reuse, modify, or contribute to the code, choose a license and update both this README and `src/main/resources/fabric.mod.json`.
+This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.

@@ -7,7 +7,7 @@
     "authors": [
         "nateg"
     ],
-    "license": "All Rights Reserved",
+    "license": "MIT",
     "icon": "assets/gardnercraft/icon.png",
     "environment": "*",
     "entrypoints": {
