@@ -1,0 +1,17 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "ITI",
+        "ICI",
+        "III"
+    ],
+    "key": {
+        "I": "minecraft:iron_block",
+        "T": "gardnercraft:gardnercraft_armor_trim_smithing_template",
+        "C": "gardnercraft:the_gardnercraft"
+    },
+    "result": {
+        "id": "gardnercraft:gardnercraft_armor_trim_smithing_template",
+        "count": 2
+    }
+}

@@ -1,0 +1,18 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "GNG",
+        "DCD",
+        "GNG"
+    ],
+    "key": {
+        "G": "minecraft:gold_block",
+        "N": "minecraft:nether_star",
+        "D": "minecraft:diamond",
+        "C": "minecraft:totem_of_undying"
+    },
+    "result": {
+        "id": "gardnercraft:the_gardnercraft",
+        "count": 1
+    }
+}

@@ -1,0 +1,8 @@
+{
+    "asset_id": "gardnercraft:gardnercraft",
+    "template_item": "gardnercraft:gardnercraft_armor_trim_smithing_template",
+    "decal": false,
+    "description": {
+        "translate": "trim_pattern.gardnercraft.gardnercraft"
+    }
+}

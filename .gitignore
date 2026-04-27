@@ -1,0 +1,23 @@
+# Gradle / build output
+.gradle/
+build/
+bin/
+out/
+
+# Local dependency jars and unpacked nested jars
+libs/
+
+# IDE / editor files
+.idea/
+.vscode/
+*.iml
+
+# Logs and local runtime folders
+logs/
+run/
+crash-reports/
+
+# OS metadata
+.DS_Store
+Thumbs.db
+desktop.ini

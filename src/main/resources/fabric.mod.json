@@ -1,0 +1,28 @@
+{
+    "schemaVersion": 1,
+    "id": "gardnercraft",
+    "version": "${version}",
+    "name": "Gardnercraft",
+    "description": "Adds the Gardnercraft server items and armor trim.",
+    "authors": [
+        "nateg"
+    ],
+    "license": "All Rights Reserved",
+    "icon": "assets/gardnercraft/icon.png",
+    "environment": "*",
+    "entrypoints": {
+        "main": [
+            "com.gardnercraft.GardnercraftMod"
+        ]
+    },
+    "custom": {
+        "polymer:resource_pack_include": true,
+        "polymer:resource_pack_require": true
+    },
+    "depends": {
+        "fabricloader": ">=0.15.0",
+        "minecraft": "~1.21",
+        "java": ">=21",
+        "fabric-api": "*"
+    }
+}
