@@ -16,6 +16,7 @@ libs/
 logs/
 run/
 crash-reports/
+server-jars/
 
 # OS metadata
 .DS_Store
