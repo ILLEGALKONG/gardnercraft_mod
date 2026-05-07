@@ -25,7 +25,6 @@ Vanilla clients can join, but they must accept the server resource pack to see t
 
 ## Roadmap
 
-- Update Gardnercraft Smithing Template Item Texture
 - Add a Music Disc with a Custom Song
 - Modrinth and Curseforge Page
 - More Version Compatibility
