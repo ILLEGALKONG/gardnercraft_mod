@@ -1,0 +1,16 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "GGG",
+        "GTG",
+        "GGG"
+    ],
+    "key": {
+        "G": "minecraft:gold_ingot",
+        "T": "gardnercraft:the_gardnercraft"
+    },
+    "result": {
+        "id": "gardnercraft:music_disc_gardnercraft",
+        "count": 1
+    }
+}
