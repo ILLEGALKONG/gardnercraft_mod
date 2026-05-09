@@ -3,6 +3,6 @@
     "description": {
         "translate": "jukebox_song.gardnercraft.gardnercraft"
     },
-    "length_in_seconds": 180.0,
+    "length_in_seconds": 111.0,
     "sound_event": "gardnercraft:music_disc.gardnercraft"
 }
