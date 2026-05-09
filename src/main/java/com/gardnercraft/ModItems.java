@@ -1,6 +1,7 @@
 package com.gardnercraft;
 
 import com.gardnercraft.item.GardnercraftItem;
+import com.gardnercraft.item.GardnercraftMusicDiscItem;
 import com.gardnercraft.item.GardnercraftTrimTemplateItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
@@ -30,6 +31,16 @@ public class ModItems {
             )
     );
 
+    public static final GardnercraftMusicDiscItem MUSIC_DISC_GARDNERCRAFT = register(
+            "music_disc_gardnercraft",
+            key -> new GardnercraftMusicDiscItem(new Item.Settings()
+                    .maxCount(1)
+                    .registryKey(key)
+                    .rarity(Rarity.UNCOMMON)
+                    .jukeboxPlayable(ModSounds.GARDNERCRAFT_JUKEBOX_SONG)
+            )
+    );
+
     private static <T extends Item> T register(String name, Function<RegistryKey<Item>, T> factory) {
         RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(GardnercraftMod.MOD_ID, name));
         return Registry.register(Registries.ITEM, key, factory.apply(key));
@@ -40,5 +51,6 @@ public class ModItems {
             entries.add(THE_GARDNERCRAFT);
             entries.add(GARDNERCRAFT_ARMOR_TRIM_SMITHING_TEMPLATE);
         });
+        ItemGroupEvents.modifyEntriesEvent(ItemGroups.TOOLS).register(entries -> entries.add(MUSIC_DISC_GARDNERCRAFT));
     }
 }

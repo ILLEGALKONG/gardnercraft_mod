@@ -12,6 +12,7 @@ public class GardnercraftMod implements ModInitializer {
 
     @Override
     public void onInitialize() {
+        ModSounds.initialize();
         ModItems.initialize();
         PolymerResourcePackUtils.addModAssets(MOD_ID);
         LOGGER.info("Gardnercraft mod loaded.");

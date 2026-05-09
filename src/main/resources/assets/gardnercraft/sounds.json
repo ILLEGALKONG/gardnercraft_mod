@@ -1,0 +1,10 @@
+{
+    "music_disc.gardnercraft": {
+        "sounds": [
+            {
+                "name": "gardnercraft:records/gardnercraft",
+                "stream": true
+            }
+        ]
+    }
+}

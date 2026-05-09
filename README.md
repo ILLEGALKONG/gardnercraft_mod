@@ -78,6 +78,30 @@ Set:
 
 If the server is behind a proxy, tunnel, panel, or domain setup, make sure AutoHost is configured with a public address that players can reach. If the resource pack prompt appears but the client fails to download it, the AutoHost URL is the first thing to check.
 
+## Music Disc Assets
+
+The Gardnercraft music disc is wired into the mod as `gardnercraft:music_disc_gardnercraft`.
+
+Place the song file here:
+
+```text
+src/main/resources/assets/gardnercraft/sounds/records/gardnercraft.ogg
+```
+
+Place the disc texture here:
+
+```text
+src/main/resources/assets/gardnercraft/textures/item/music_disc_gardnercraft.png
+```
+
+If you already have a custom JSON model, replace:
+
+```text
+src/main/resources/assets/gardnercraft/models/item/music_disc_gardnercraft.json
+```
+
+The current song length is set to `180.0` seconds in `src/main/resources/data/gardnercraft/jukebox_song/gardnercraft.json`. Update that value to match the real `.ogg` length before release.
+
 ## Development Notes
 
 Polymer dependencies are resolved through the Nucleoid Maven repository. The local `libs/` folder is intentionally ignored and should not be committed.
