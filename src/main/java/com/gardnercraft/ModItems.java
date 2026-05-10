@@ -3,6 +3,7 @@ package com.gardnercraft;
 import com.gardnercraft.item.GardnercraftItem;
 import com.gardnercraft.item.GardnercraftMusicDiscItem;
 import com.gardnercraft.item.GardnercraftTrimTemplateItem;
+import eu.pb4.polymer.core.api.item.PolymerItem;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroups;
@@ -43,7 +44,11 @@ public class ModItems {
 
     private static <T extends Item> T register(String name, Function<RegistryKey<Item>, T> factory) {
         RegistryKey<Item> key = RegistryKey.of(RegistryKeys.ITEM, Identifier.of(GardnercraftMod.MOD_ID, name));
-        return Registry.register(Registries.ITEM, key, factory.apply(key));
+        T item = Registry.register(Registries.ITEM, key, factory.apply(key));
+        if (item instanceof PolymerItem polymerItem) {
+            PolymerItem.registerOverlay(item, polymerItem);
+        }
+        return item;
     }
 
     public static void initialize() {

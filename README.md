@@ -6,6 +6,7 @@ Gardnercraft is a Fabric server-side mod that adds Gardnercraft-themed items and
 
 - Adds `The Gardnercraft` custom item.
 - Adds the Gardnercraft armor trim smithing template.
+- Adds the Gardnercraft music disc with a custom song.
 - Includes custom item and armor trim textures.
 - Uses Polymer resource pack metadata so the server-generated pack includes this mod's assets.
 
@@ -15,7 +16,7 @@ Gardnercraft is a Fabric server-side mod that adds Gardnercraft-themed items and
 - Fabric Loader `0.18.6` or newer
 - Java `21`
 - Fabric API
-- Polymer bundled `0.15.2+1.21.11` on the server
+- Polymer bundled `0.15.2+1.21.11` on the server, which provides Polymer Core, Polymer Resource Pack, and Packet Tweaker
 
 Vanilla clients can join, but they must accept the server resource pack to see the custom textures.
 
@@ -25,7 +26,6 @@ Vanilla clients can join, but they must accept the server resource pack to see t
 
 ## Roadmap
 
-- Add a Music Disc with a Custom Song
 - Modrinth and Curseforge Page
 - More Version Compatibility
 
@@ -53,7 +53,7 @@ The built mod jar is created under:
 
 ## Server Installation
 
-Place the Gardnercraft mod jar in the server `mods` folder.
+Place the Gardnercraft mod jar in the server `mods` folder. Players do not need the Gardnercraft mod installed on their client.
 
 Also place Polymer bundled in the server `mods` folder:
 
@@ -99,7 +99,15 @@ If you already have a custom JSON model, replace:
 src/main/resources/assets/gardnercraft/models/item/music_disc_gardnercraft.json
 ```
 
-The current song length is set to `180.0` seconds in `src/main/resources/data/gardnercraft/jukebox_song/gardnercraft.json`. Update that value to match the real `.ogg` length before release.
+The current song length is set to `111.0` seconds in `src/main/resources/data/gardnercraft/jukebox_song/gardnercraft.json`. Update that value to match the real `.ogg` length before release.
+
+The disc recipe is:
+
+```text
+gold ingot       gold ingot       gold ingot
+gold ingot       The Gardnercraft  gold ingot
+gold ingot       gold ingot       gold ingot
+```
 
 ## Development Notes
 

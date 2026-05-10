@@ -24,9 +24,9 @@ dependencies {
     modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
     modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
 
-    modCompileOnly "eu.pb4:polymer-core:${project.polymer_version}"
-    modCompileOnly "eu.pb4:polymer-resource-pack:${project.polymer_version}"
-    modCompileOnly "xyz.nucleoid:packet-tweaker:0.6.0+1.21.10"
+    modImplementation "eu.pb4:polymer-core:${project.polymer_version}"
+    modImplementation "eu.pb4:polymer-resource-pack:${project.polymer_version}"
+    modImplementation "xyz.nucleoid:packet-tweaker:0.6.0+1.21.10"
 }
 
 processResources {
