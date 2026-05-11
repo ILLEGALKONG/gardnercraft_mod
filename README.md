@@ -12,7 +12,7 @@ Gardnercraft is a Fabric server-side mod that adds Gardnercraft-themed items and
 
 ## Requirements
 
-- Minecraft `1.21.11`
+- Minecraft `1.21.x`
 - Fabric Loader `0.18.6` or newer
 - Java `21`
 - Fabric API
